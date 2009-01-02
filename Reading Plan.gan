@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2008-05-11" view-index="0" gantt-divider-location="272" resource-divider-location="301" version="2.0">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="姓名" width="55" order="0"/>
+        <field id="1" name="預設角色" width="44" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Linux Kernel相關學習" color="#8cb6ce" meeting="false" start="2007-08-08" duration="358" complete="99" priority="1" expand="true">
+            <task id="1" name="看Embedded LInux Primer" color="#8cb6ce" meeting="false" start="2007-08-08" duration="3" complete="100" priority="1" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="看Linux Kernel Development 2e, 共20章,3附錄" color="#8cb6ce" meeting="false" start="2007-08-13" duration="26" complete="100" priority="1" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="看Linux Device Driver 3e" color="#8cb6ce" meeting="false" start="2007-09-18" duration="45" complete="100" priority="1" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Git User Manual" color="#8cb6ce" meeting="false" start="2007-11-23" duration="8" complete="100" priority="1" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="看Understanding The Linux Kernel 3e, 共20章,2附錄" color="#8cb6ce" meeting="false" start="2007-12-05" duration="153" complete="99" priority="1" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="看Esseitial Linux Device Drivers, 共23章,3附錄" color="#8cb6ce" meeting="false" start="2008-07-07" duration="32" complete="100" priority="1" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="看Understanding Linux Network Internals, 共36章" color="#8cb6ce" meeting="false" start="2008-08-20" duration="88" complete="100" priority="1" expand="true"/>
+        </task>
+        <task id="7" name="英文文法" color="#8cb6ce" meeting="false" start="2007-06-18" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="8" name="Linux User Space Application Programming" color="#8cb6ce" meeting="false" start="2007-06-18" duration="1" complete="0" priority="1" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="0" width="299"/>
+        <displaycolumn property-id="tpd4" order="1" width="42"/>
+        <displaycolumn property-id="tpd5" order="2" width="41"/>
+    </taskdisplaycolumns>
+    <previous>
+        <previous-tasks name="2007/8/8">
+            <previous-task id="2" start="2007-08-08" duration="325" meeting="false" super="true"/>
+            <previous-task id="0" start="2007-08-08" duration="33" meeting="false" super="false"/>
+            <previous-task id="1" start="2007-08-08" duration="8" meeting="false" super="false"/>
+            <previous-task id="4" start="2007-09-24" duration="55" meeting="false" super="false"/>
+            <previous-task id="5" start="2007-12-10" duration="104" meeting="false" super="false"/>
+            <previous-task id="6" start="2008-05-02" duration="133" meeting="false" super="false"/>
+            <previous-task id="3" start="2007-08-08" duration="157" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
